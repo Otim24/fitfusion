@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-dark: #0A0A0A;
+  --bg-card: #1A1A1A;
+  --accent: #AAFF00;
+  --accent-glow: rgba(170, 255, 0, 0.4);
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .display-font {
+  font-family: 'Bebas Neue', display;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+/* Utility Overrides for Tailwind Extensibility */
+.text-accent { color: var(--accent); }
+.bg-accent { background-color: var(--accent); }
+.border-accent { border-color: var(--accent); }
+
+/* Custom Image Placeholder */
+.image-placeholder {
+  background-color: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.3);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.03),
+    transparent
+  );
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 200%;
+  }
+}
+
+/* Specific aspect ratios */
+.hero-placeholder { aspect-ratio: 4/5; border-radius: 8px; }
+.trainer-placeholder { aspect-ratio: 3/4; border-radius: 8px 8px 0 0; }
+.workout-placeholder { aspect-ratio: 16/9; border-radius: 8px; }
+.product-placeholder { aspect-ratio: 1/1; border-radius: 8px; }
+
+/* Scroll Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.premium-text-reveal {
+  transform: translateY(30px) scale(0.95);
+  filter: blur(8px);
+  transition: all 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.premium-text-reveal.active {
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+.reveal-delay-500 { transition-delay: 500ms; }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--bg-dark);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.75rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .btn-primary:hover {
+    box-shadow: 0 0 20px var(--accent-glow);
+    transform: translateY(-2px);
+  }
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid rgba(255,255,255,0.2);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.25rem;
+  padding: 0.75rem 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .btn-secondary:hover {
+    border-color: var(--text-primary);
+    background-color: rgba(255,255,255,0.05);
+    transform: translateY(-2px);
+  }
+}
+
+/* Navigation */
+.header-glass {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.header-glass.scrolled {
+  background: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards */
+.premium-card {
+  background-color: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+@media (hover: hover) {
+  .premium-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(170, 255, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Section Padding */
+.section-padding {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* WhatsApp Icon Button */
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+@media (hover: hover) {
+  .btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+  }
+}
+
+/* Typewriter Cursor */
+.typewriter-caret {
+  display: inline-block;
+  width: 5px;
+  height: 0.85em;
+  background-color: var(--accent);
+  margin-left: 2px;
+  margin-right: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Infinite Marquee */
+.marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+.marquee-content {
+  flex-shrink: 0;
+  display: flex;
+  transform: translateX(0);
+  animation: scrollX 20s linear infinite;
+}
+
+@keyframes scrollX {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Glassmorphism Header */
+.header-glass {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.header-glass.scrolled {
+  background-color: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFusion | Premium Fitness Experience in Kampala, Uganda</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="FitFusion | Premium Fitness Experience in Kampala">
+    <meta name="description" content="FitFusion is Uganda's premier fitness destination in Ntinda, Kampala. Join our elite community for world-class personal training, dynamic classes, state-of-the-art facilities, and premium sports supplements.">
+    <meta name="keywords" content="gym in Kampala, FitFusion Uganda, fitness center Ntinda, personal training Kampala, crossfit Uganda, whey protein Kampala, premium gym Kampala">
+    <meta name="author" content="FitFusion">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.fitfusion.co.ug/">
+    <meta property="og:title" content="FitFusion | Premium Fitness Experience">
+    <meta property="og:description" content="Sculpt your body, elevate your spirit. Experience world-class trainers, state-of-the-art equipment, and our premium supplement store in the heart of Kampala.">
+    <meta property="og:image" content="https://www.fitfusion.co.ug/hero.png">
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.fitfusion.co.ug/">
+    <meta property="twitter:title" content="FitFusion | Premium Fitness Experience">
+    <meta property="twitter:description" content="Join the elite fitness community in Kampala. World-class trainers, high-intensity classes, and top-tier supplements.">
+    <meta property="twitter:image" content="https://www.fitfusion.co.ug/hero.png">
+    
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://www.fitfusion.co.ug/">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0A0A0A] text-white font-['Inter'] antialiased overflow-hidden">
+    
+    <!-- ============================================================== -->
+    <!-- DEMO CUSTOMIZATION GUIDE:                                      -->
+    <!-- Search for "[CUSTOMIZE HERE" in this file to quickly find      -->
+    <!-- the places you need to change for a specific gym demo:         -->
+    <!-- 1. Gym Logo & Name                                             -->
+    <!-- 2. WhatsApp Phone Numbers (in the Store section)               -->
+    <!-- 3. Google Maps Embed                                           -->
+    <!-- 4. Footer Contact Details                                      -->
+    <!-- ============================================================== -->
+    
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="fixed inset-0 z-[100] bg-[#0A0A0A] flex flex-col items-center justify-center transition-transform duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]">
+        <div class="overflow-hidden mb-8">
+            <div id="splash-logo" class="display-font text-5xl md:text-7xl tracking-wide flex items-center gap-4 translate-y-full opacity-0 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)]">
+                <i data-lucide="activity" class="text-accent w-12 h-12"></i>
+                FIT<span class="text-accent">FUSION</span>
+            </div>
+        </div>
+        <div class="w-48 h-[2px] bg-white/10 overflow-hidden rounded-full opacity-0 transition-opacity duration-500" id="splash-progress">
+            <div id="splash-bar" class="h-full bg-accent w-0 transition-all duration-[1200ms] ease-out"></div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <header id="main-header" class="fixed w-full z-50 header-glass">
+        <div id="header-container" class="container mx-auto px-6 py-6 transition-all duration-300 flex justify-between items-center">
+            <!-- [CUSTOMIZE HERE: Gym Logo & Name] -->
+            <!-- Logo -->
+            <a href="#" class="display-font text-3xl tracking-wide flex items-center gap-2">
+                <i data-lucide="activity" class="text-accent w-8 h-8"></i>
+                FIT<span class="text-accent">FUSION</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#features" class="hover:text-accent transition-colors">Features</a>
+                <a href="#classes" class="hover:text-accent transition-colors">Classes</a>
+                <a href="#trainers" class="hover:text-accent transition-colors">Trainers</a>
+                <a href="#pricing" class="hover:text-accent transition-colors">Pricing</a>
+                <a href="#store" class="hover:text-accent transition-colors">Store</a>
+            </nav>
+            
+            <!-- CTA & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20FitFusion." class="hidden md:inline-flex btn-primary text-sm py-2 px-6">Get Started</a>
+                <button id="menu-btn" class="md:hidden text-white hover:text-accent transition-colors">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#0A0A0A] border-b border-white/10 absolute w-full top-full left-0">
+            <nav class="flex flex-col py-4 px-6 space-y-4 font-medium">
+                <a href="#features" class="mobile-link text-lg hover:text-accent transition-colors">Features</a>
+                <a href="#classes" class="mobile-link text-lg hover:text-accent transition-colors">Classes</a>
+                <a href="#trainers" class="mobile-link text-lg hover:text-accent transition-colors">Trainers</a>
+                <a href="#pricing" class="mobile-link text-lg hover:text-accent transition-colors">Pricing</a>
+                <a href="#store" class="mobile-link text-lg hover:text-accent transition-colors">Store</a>
+                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20FitFusion." class="mobile-link text-accent text-lg mt-4 border border-accent rounded py-2 text-center" style="font-family:'Bebas Neue',sans-serif">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden bg-[url('hero.png')] bg-cover bg-center bg-no-repeat bg-fixed">
+        <!-- Background decorative overlay -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/90 to-[#0A0A0A]/30"></div>
+        <div class="absolute inset-0 bg-black/40"></div>
+        
+        <div class="container mx-auto px-6 relative z-10 w-full">
+            <!-- Left Content -->
+            <div class="reveal mt-12 lg:mt-0 max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-white/5 border border-white/20 backdrop-blur-md rounded-full text-xs font-semibold tracking-wider text-accent mb-6 uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                    </span>
+                    The Revolution Begins
+                </div>
+                <h1 class="display-font text-6xl md:text-7xl lg:text-8xl mb-6 leading-[0.9] drop-shadow-2xl">
+                    Sculpt Your Body,<br>
+                    <span id="typewriter-text" class="text-accent drop-shadow-[0_0_15px_rgba(170,255,0,0.5)]">Elevate</span><span class="typewriter-caret drop-shadow-[0_0_15px_rgba(170,255,0,0.5)]"></span> Your Spirit
+                </h1>
+                <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-lg font-light leading-relaxed mix-blend-screen drop-shadow-md">
+                    Join the elite fitness community. World-class trainers, state-of-the-art facilities, and a relentless pursuit of greatness.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20FitFusion." class="btn-primary shadow-[0_0_20px_rgba(170,255,0,0.3)] hover:shadow-[0_0_30px_rgba(170,255,0,0.5)] transition-shadow">Get Started <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i></a>
+                    <a href="#classes" class="btn-secondary bg-[#0A0A0A]/50 backdrop-blur-md border-white/20 hover:border-accent hover:bg-[#0A0A0A]/80 transition-all">Explore Classes</a>
+                </div>
+                
+                <!-- Stats -->
+                <div class="grid grid-cols-2 gap-8 border-t border-white/20 pt-8 max-w-md backdrop-blur-sm mix-blend-screen">
+                    <div>
+                        <div class="display-font text-4xl text-white mb-1 drop-shadow-lg">12k+</div>
+                        <div class="text-sm text-gray-300 uppercase tracking-widest font-semibold">Active Members</div>
+                    </div>
+                    <div>
+                        <div class="display-font text-4xl text-white mb-1 flex items-center gap-2 drop-shadow-lg">
+                            4.9 <i data-lucide="star" class="w-6 h-6 text-accent fill-accent drop-shadow-[0_0_10px_rgba(170,255,0,0.8)]"></i>
+                        </div>
+                        <div class="text-sm text-gray-300 uppercase tracking-widest font-semibold">User Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continuous Marquee Strip -->
+    <section class="border-y border-white/5 bg-black py-4 overflow-hidden relative group">
+        <!-- Slight fade on edges -->
+        <div class="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0A0A0A] to-transparent z-10 pointer-events-none"></div>
+        
+        <div class="marquee-wrapper">
+            <div class="marquee-content flex items-center text-accent drop-shadow-[0_0_10px_rgba(170,255,0,0.4)]">
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="marquee-content flex items-center text-accent drop-shadow-[0_0_10px_rgba(170,255,0,0.4)]" aria-hidden="true">
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+                <span class="display-font text-[1.75rem] tracking-[0.2em] whitespace-nowrap">FITFUSION</span><span class="mx-8 w-1.5 h-1.5 rounded-full bg-accent/80 shrink-0"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section-padding bg-[#0A0A0A]">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 reveal">Core Excellence</p>
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal reveal-delay-200 premium-text-reveal">Inspired to <span class="text-accent">Inspire</span> Your Best Self</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Feature 1 -->
+                <div class="premium-card p-8 reveal reveal-delay-100">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="apple"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Nutrition Guidance</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Customized meal plans and macro tracking designed by certified nutritionists to accelerate your results.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="premium-card p-8 reveal reveal-delay-200">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Expert Trainers</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Learn from industry veterans completely dedicated to form, safety, and pushing your limits.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="premium-card p-8 reveal reveal-delay-300">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="line-chart"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Progress Tracking</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Data-driven insights and monthly metrics to keep you accountable and visualising every victory.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="premium-card p-8 reveal reveal-delay-400">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="crown"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Premium Membership</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Exclusive access to recovery saunas, specialized equipment areas, and priority class booking.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="premium-card p-8 reveal reveal-delay-500">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Community Support</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Join a tribe of like-minded individuals. We bleed, sweat, and conquer goals together.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="premium-card p-8 reveal reveal-delay-500">
+                    <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-6 text-accent">
+                        <i data-lucide="flame"></i>
+                    </div>
+                    <h3 class="display-font text-2xl mb-3">Next-Level Fitness</h3>
+                    <p class="text-gray-400 leading-relaxed font-light">Elevate your paradigm with programming that bridges strength, agility, and pure athleticism.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Sets Us Apart -->
+    <section class="py-20 bg-[#111111] border-y border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="display-font text-5xl text-white reveal premium-text-reveal">Discover <br/><span class="text-accent">What Sets Us Apart</span></h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="premium-card p-8 flex flex-col items-start reveal reveal-delay-100 group">
+                    <i data-lucide="zap" class="w-10 h-10 text-accent mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="display-font text-2xl mb-2">Cardio Training</h4>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">High-octane routines to torch calories and build an unbreakable engine.</p>
+                    <a href="#classes" class="text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-1 group-hover:gap-2">
+                        Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="premium-card premium-card-accent p-8 flex flex-col items-start reveal reveal-delay-200 group">
+                    <i data-lucide="dumbbell" class="w-10 h-10 text-accent mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="display-font text-2xl mb-2">Strength Build</h4>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">Hypertrophy and powerlifting programming engineered for pure structural growth.</p>
+                    <a href="#classes" class="text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-1 group-hover:gap-2">
+                        Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="premium-card p-8 flex flex-col items-start reveal reveal-delay-300 group">
+                    <i data-lucide="target" class="w-10 h-10 text-accent mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="display-font text-2xl mb-2">Fat Loss</h4>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">Scientifically backed metcon strategies to shed fat while preserving lean muscle.</p>
+                    <a href="#classes" class="text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-1 group-hover:gap-2">
+                        Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+                <!-- Card 4 -->
+                <div class="premium-card p-8 flex flex-col items-start reveal reveal-delay-400 group">
+                    <i data-lucide="timer" class="w-10 h-10 text-accent mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="display-font text-2xl mb-2">HIIT Workouts</h4>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow leading-relaxed">High-Intensity Interval Training to maximize metabolic rate and push thresholds.</p>
+                    <a href="#classes" class="text-accent text-sm font-bold uppercase tracking-widest hover:text-white transition-colors flex items-center gap-1 group-hover:gap-2">
+                        Learn More <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workout Classes Section -->
+    <section id="classes" class="section-padding bg-[#0A0A0A]">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <p class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 reveal">Group Dynamics</p>
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal reveal-delay-200 premium-text-reveal">Train Smarter, <br/><span class="text-accent">Unleash Your Potential</span></h2>
+                <p class="mt-6 text-gray-400 text-lg max-w-2xl mx-auto font-light reveal reveal-delay-300">Join the floor with like-minded warriors. Find your pace, challenge your limits, and transform your capabilities.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Class 1 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20Barbell%20Basics%20class" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-100 cursor-pointer">
+                    <img src="class_barbell.png" alt="Barbell Class" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">Barbell Basics</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+                <!-- Class 2 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20Kettlebell%20Masterclass" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-200 cursor-pointer">
+                    <img src="class_kettlebell.png" alt="Kettlebell Masterclass" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">Kettlebell Masterclass</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+                <!-- Class 3 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20Cardio%20Power%20Boost%20class" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-300 cursor-pointer">
+                    <img src="class_cardio.png" alt="Cardio Sprint" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">Cardio Power Boost</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+                <!-- Class 4 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20Hypertrophy%20class" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-400 cursor-pointer">
+                    <img src="class_hypertrophy.png" alt="Hypertrophy" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">Hypertrophy</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+                <!-- Class 5 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20Rope%20Climbing%20class" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-500 cursor-pointer">
+                    <img src="class_rope.png" alt="Rope Climbing" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">Rope Climbing</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+                <!-- Class 6 -->
+                <a href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20the%20schedule%20for%20the%20TRX%20Suspension%20class" target="_blank" class="group relative block overflow-hidden rounded-lg reveal reveal-delay-500 cursor-pointer">
+                    <img src="class_trx.png" alt="TRX Suspension" class="w-full h-full object-cover workout-placeholder transition-transform duration-700 group-hover:scale-105 group-hover:opacity-75">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8">
+                        <div class="w-10 h-1 bg-accent mb-4 transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500"></div>
+                        <h4 class="display-font text-3xl text-white">TRX Suspension</h4>
+                        <p class="text-gray-300 text-sm font-light opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 flex items-center gap-2 mt-2">
+                           View Schedule <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="text-center mt-12 reveal reveal-delay-300">
+                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20FitFusion." class="text-accent border-b border-accent pb-1 font-semibold uppercase tracking-widest hover:text-white hover:border-white transition-all">View Full Class Timetable</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Gallery Section -->
+    <section id="facilities" class="py-24 bg-[#0A0A0A]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal premium-text-reveal">World-Class Facilities, <br/><span class="text-accent">Built For You</span></h2>
+            </div>
+            
+            <!-- Bento Masonry Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[250px]">
+                
+                <!-- 1. Large: Weight Floor -->
+                <div class="lg:col-span-2 lg:row-span-2 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-100 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: WEIGHT FLOOR ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-10 h-1 bg-accent mb-4"></div>
+                        <h3 class="display-font text-3xl text-white">Weight Floor</h3>
+                    </div>
+                </div>
+
+                <!-- 2. Medium: Cardio Zone -->
+                <div class="lg:col-span-1 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-200 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: CARDIO ZONE ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-8 h-1 bg-accent mb-3"></div>
+                        <h3 class="display-font text-2xl text-white">Cardio Zone</h3>
+                    </div>
+                </div>
+
+                <!-- 3. Medium: CrossFit Area -->
+                <div class="lg:col-span-1 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-300 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: CROSSFIT AREA ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-8 h-1 bg-accent mb-3"></div>
+                        <h3 class="display-font text-2xl text-white">CrossFit Area</h3>
+                    </div>
+                </div>
+
+                <!-- 4. Wide: Swimming Pool -->
+                <div class="lg:col-span-2 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-400 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: SWIMMING POOL ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-10 h-1 bg-accent mb-4"></div>
+                        <h3 class="display-font text-3xl text-white">Swimming Pool</h3>
+                    </div>
+                </div>
+
+                <!-- 5. Medium: Locker Rooms -->
+                <div class="lg:col-span-1 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-200 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: LOCKER ROOMS ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-8 h-1 bg-accent mb-3"></div>
+                        <h3 class="display-font text-2xl text-white">Locker Rooms</h3>
+                    </div>
+                </div>
+
+                <!-- 6. Medium: Boxing Ring -->
+                <div class="lg:col-span-1 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-300 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: BOXING RING ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-8 h-1 bg-accent mb-3"></div>
+                        <h3 class="display-font text-2xl text-white">Boxing Ring</h3>
+                    </div>
+                </div>
+
+                <!-- 7. Large: Stretching Zone -->
+                <div class="lg:col-span-2 lg:row-span-2 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-400 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: STRETCHING ZONE ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-10 h-1 bg-accent mb-4"></div>
+                        <h3 class="display-font text-3xl text-white">Stretching Zone</h3>
+                    </div>
+                </div>
+
+                <!-- 8. Wide: Juice Bar -->
+                <div class="lg:col-span-2 lg:row-span-1 group relative overflow-hidden rounded-xl border border-white/5 reveal reveal-delay-500 cursor-pointer">
+                    <div class="image-placeholder w-full h-full transition-transform duration-700 group-hover:scale-105">
+                        [ IMAGE: JUICE BAR ]
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end opacity-0 group-hover:opacity-100 translate-y-8 group-hover:translate-y-0 transition-all duration-500">
+                        <div class="w-10 h-1 bg-accent mb-4"></div>
+                        <h3 class="display-font text-3xl text-white">Juice Bar</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="section-padding bg-[#0A0A0A] relative overflow-hidden">
+        <div class="absolute right-0 top-1/4 w-[40vw] h-[40vw] bg-accent/5 blur-[120px] rounded-full translate-x-1/2 -z-10"></div>
+        
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="display-font text-5xl md:text-6xl mb-4 reveal premium-text-reveal">Your Fitness <br/><span class="text-accent text-4xl">Goals, Their Expertise</span></h2>
+                <p class="text-gray-400 font-light reveal reveal-delay-200">Guided by the best. Our elite professionals hold you to a higher standard of success.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Trainer 1 -->
+                <div class="reveal reveal-delay-100 group">
+                    <div class="image-placeholder trainer-placeholder overflow-hidden shadow-xl shadow-black">
+                        [ IMAGE: TRAINER 1 (PORTRAIT) ]
+                    </div>
+                    <div class="bg-[#111] p-6 text-center border-t border-accent border-x border-b border-x-white/5 border-b-white/5 rounded-b-lg -mt-1 relative z-10 group-hover:bg-[#151515] transition-colors">
+                        <h4 class="display-font text-3xl mb-1">Marcus Vance</h4>
+                        <p class="text-accent text-sm tracking-widest uppercase font-semibold">Master of Hypertrophy</p>
+                    </div>
+                </div>
+                <!-- Trainer 2 -->
+                <div class="reveal reveal-delay-200 group">
+                    <div class="image-placeholder trainer-placeholder overflow-hidden shadow-xl shadow-black">
+                        [ IMAGE: TRAINER 2 (PORTRAIT) ]
+                    </div>
+                    <div class="bg-[#111] p-6 text-center border-t border-accent border-x border-b border-x-white/5 border-b-white/5 rounded-b-lg -mt-1 relative z-10 group-hover:bg-[#151515] transition-colors">
+                        <h4 class="display-font text-3xl mb-1">Sarah Croft</h4>
+                        <p class="text-accent text-sm tracking-widest uppercase font-semibold">HIIT & Metabolic Conditioning</p>
+                    </div>
+                </div>
+                <!-- Trainer 3 -->
+                <div class="reveal reveal-delay-300 group">
+                    <div class="image-placeholder trainer-placeholder overflow-hidden shadow-xl shadow-black">
+                        [ IMAGE: TRAINER 3 (PORTRAIT) ]
+                    </div>
+                    <div class="bg-[#111] p-6 text-center border-t border-accent border-x border-b border-x-white/5 border-b-white/5 rounded-b-lg -mt-1 relative z-10 group-hover:bg-[#151515] transition-colors">
+                        <h4 class="display-font text-3xl mb-1">Logan Pierce</h4>
+                        <p class="text-accent text-sm tracking-widest uppercase font-semibold">Mobility & Powerlifting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-[#0A0A0A] border-y border-white/5 relative overflow-hidden">
+        <div class="absolute left-0 top-1/2 w-[30vw] h-[30vw] bg-accent/5 blur-[100px] rounded-full -translate-x-1/2 -z-10"></div>
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal premium-text-reveal">Your Success Stories, <br/><span class="text-accent">Our Inspiration</span></h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto font-light reveal reveal-delay-200">Real transformations from the people who refused to settle for average.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="premium-card p-8 reveal reveal-delay-100 relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-12 h-12 text-white/5"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                    </div>
+                    <p class="text-gray-300 mb-8 font-light italic leading-relaxed text-lg">"FitFusion isn't just a gym, it's a proving ground. The trainers rebuilt my foundation and the community pushed me past my mental barriers."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center font-bold text-accent display-font text-xl">DM</div>
+                        <div>
+                            <h5 class="font-bold text-white">David Miller</h5>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="premium-card p-8 reveal reveal-delay-200 relative lg:-translate-y-4">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-12 h-12 text-white/5"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                    </div>
+                    <p class="text-gray-300 mb-8 font-light italic leading-relaxed text-lg">"The energy here is unmatched. The Endurance track completely changed my capacity for long-distance running. Premium equipment, premium vibes."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center font-bold text-accent display-font text-xl">JH</div>
+                        <div>
+                            <h5 class="font-bold text-white">Jessica Hayes</h5>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Endurance Athlete</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="premium-card p-8 reveal reveal-delay-300 relative">
+                    <i data-lucide="quote" class="absolute top-6 right-6 w-12 h-12 text-white/5"></i>
+                    <div class="flex gap-1 mb-6">
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-accent fill-accent"></i>
+                    </div>
+                    <p class="text-gray-300 mb-8 font-light italic leading-relaxed text-lg">"I came in for weight loss and stayed for the culture. The expert nutritional guidance finally helped me crack the code to staying lean year-round."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center font-bold text-accent display-font text-xl">MR</div>
+                        <div>
+                            <h5 class="font-bold text-white">Michael Reynolds</h5>
+                            <p class="text-xs text-gray-500 uppercase tracking-widest">Member since 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Membership Section -->
+    <section id="pricing" class="py-24 bg-[#0A0A0A] border-y border-white/5 relative overflow-hidden">
+        <div class="absolute left-0 top-1/2 w-[30vw] h-[30vw] bg-accent/5 blur-[100px] rounded-full -translate-x-1/2 -z-10"></div>
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 reveal">Memberships</p>
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal reveal-delay-200 premium-text-reveal">Join the <span class="text-accent">Elite</span></h2>
+                <p class="text-gray-400 mt-4 max-w-2xl mx-auto font-light reveal reveal-delay-300">Select the plan that aligns with your commitment to greatness.</p>
+            </div>
+            
+            <!-- 3 Main Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+                
+                <!-- Daily -->
+                <div class="premium-card p-8 reveal reveal-delay-100 flex flex-col justify-between hover:border-white/20">
+                    <div>
+                        <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-2">Daily Pass</h3>
+                        <p class="text-gray-400 text-sm mb-6">Perfect for drop-ins and trial sessions.</p>
+                        <div class="mb-8">
+                            <span class="text-gray-500 font-bold uppercase tracking-widest text-xs">UGX</span>
+                            <span class="display-font text-5xl text-white tracking-widest leading-none block mt-1">15,000</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Full Gym Floor Access</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Locker Usage</li>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20get%20a%20Daily%20Pass." class="btn-secondary w-full border-white/10 hover:border-white/30 text-sm py-3 mt-8">Book Day Pass</a>
+                </div>
+                
+                <!-- Monthly (Most Popular) -->
+                <div class="premium-card relative p-8 reveal reveal-delay-200 border-accent/30 bg-[#151515] flex flex-col justify-between shadow-[0_0_30px_rgba(170,255,0,0.05)] transform md:-translate-y-4">
+                    <div class="absolute top-0 right-0 left-0 flex justify-center -mt-3">
+                        <span class="bg-accent text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1.5 rounded-full shadow-[0_0_15px_rgba(170,255,0,0.3)]">Most Popular</span>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-2">Monthly</h3>
+                        <p class="text-gray-400 text-sm mb-6">Commit to 30 days of absolute transformation.</p>
+                        <div class="mb-8">
+                            <span class="text-gray-500 font-bold uppercase tracking-widest text-xs">UGX</span>
+                            <span class="display-font text-5xl text-accent tracking-widest leading-none block mt-1 drop-shadow-[0_0_10px_rgba(170,255,0,0.3)]">350,000</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Unlimited Facilities Access</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> All Standard Classes</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Nutrition Roadmap</li>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20sign%20up%20for%20the%20Monthly%20Membership." class="btn-primary w-full shadow-[0_0_15px_rgba(170,255,0,0.2)] text-sm py-3 mt-8">Join The Elite</a>
+                </div>
+                
+                <!-- Annually -->
+                <div class="premium-card p-8 reveal reveal-delay-300 flex flex-col justify-between hover:border-white/20">
+                    <div>
+                        <h3 class="text-white text-xl font-bold uppercase tracking-widest mb-2">Annually</h3>
+                        <p class="text-gray-400 text-sm mb-6">For the uncompromising 365-day warrior.</p>
+                        <div class="mb-8">
+                            <span class="text-gray-500 font-bold uppercase tracking-widest text-xs">UGX</span>
+                            <span class="display-font text-5xl text-white tracking-widest leading-none block mt-1">3,500,000</span>
+                        </div>
+                        <ul class="space-y-4 mb-8 text-sm text-gray-300">
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Save 16% vs monthly rate</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> Priority Class Booking</li>
+                            <li class="flex items-center gap-3"><i data-lucide="check" class="text-accent w-4 h-4"></i> 1x Free Guest Pass/Month</li>
+                        </ul>
+                    </div>
+                    <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20commit%20to%20the%20Annual%20Membership." class="btn-secondary w-full border-white/10 hover:border-white/30 text-sm py-3 mt-8">Commit Now</a>
+                </div>
+            </div>
+
+            <!-- Additional Pricing Options -->
+            <div class="max-w-4xl mx-auto premium-card p-8 md:p-12 reveal reveal-delay-400 bg-black/40 backdrop-blur-md border border-white/5 shadow-2xl">
+                <h3 class="display-font text-3xl text-white border-b border-white/10 pb-4 mb-8 text-center md:text-left">Extended & Specialty Packages</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+                    <!-- Left Col -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm">Weekly</span>
+                            <span class="text-accent font-bold text-lg">UGX 90,000</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm flex items-center gap-2">Monthly Couple <i data-lucide="heart" class="w-3.5 h-3.5 text-red-500 fill-red-500/20"></i></span>
+                            <span class="text-accent font-bold text-lg">UGX 650,000</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm">Quarterly</span>
+                            <span class="text-accent font-bold text-lg">UGX 1,050,000</span>
+                        </div>
+                    </div>
+                    <!-- Right Col -->
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm">Semi-Annually</span>
+                            <span class="text-accent font-bold text-lg">UGX 2,100,000</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm flex items-center gap-2">Weekends Only <i data-lucide="sun" class="w-3.5 h-3.5 text-[#FFD700]"></i></span>
+                            <span class="text-accent font-bold text-lg">UGX 10,000</span>
+                        </div>
+                        <div class="flex justify-between items-end border-b border-white/5 border-dashed pb-2">
+                            <span class="text-gray-300 font-semibold tracking-wide uppercase text-sm flex items-center gap-2">Spinning Class <i data-lucide="bike" class="w-3.5 h-3.5 text-cyan-400"></i></span>
+                            <span class="text-accent font-bold text-lg">UGX 20,000</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10 text-center">
+                    <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20inquire%20about%20a%20specialty%20membership." class="text-white hover:text-accent font-bold uppercase tracking-widest text-sm inline-flex items-center gap-2 transition-colors">
+                        Inquire via WhatsApp <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Supplement Store Section -->
+    <section id="store" class="section-padding bg-[#0A0A0A]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 reveal">Refuel & Recover</p>
+                <h2 class="display-font text-5xl md:text-6xl text-white reveal reveal-delay-200 premium-text-reveal">Fuel Your <span class="text-accent">Gains</span></h2>
+            </div>
+            
+            <div class="relative w-full overflow-hidden group py-4" id="store-carousel-container">
+                <!-- Carousel Track -->
+                <div class="flex transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] gap-6" id="store-carousel-track" style="transform: translateX(0%);">
+                    
+                    <!-- Product 1 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Protein</div>
+                            <img src="whey_protein_1774712393859.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="Whey Protein Pro">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">Whey Protein Pro</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 85,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <!-- [CUSTOMIZE HERE: WhatsApp Number and Product Message] -->
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20Whey%20Protein" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Mass Builder</div>
+                            <img src="creatine_1774712409878.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="Creatine Monohydrate">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">Creatine Monohydrate</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 60,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20Creatine" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Pre-Workout</div>
+                            <img src="pre_workout_1774712429031.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="Surge Pre-Workout">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">Ignite Pre-Workout</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 75,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20Pre-Workout" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Amino Acids</div>
+                            <img src="bcaa_1774712449404.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="BCAA Recovery">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">BCAA Recovery</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 55,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20BCAA" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Mass Builder</div>
+                            <img src="mass_gainer_1774712467064.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="Titan Mass Gainer">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">Mass Gainer 5000</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 120,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20Mass%20Gainer" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] flex-shrink-0 premium-card p-0 flex flex-col hover:scale-[1.02] transition-transform duration-300 overflow-hidden group/card bg-[#111111] border border-white/5 rounded-xl">
+                        <div class="w-full h-64 relative bg-[#0a0a0a] overflow-hidden">
+                            <div class="absolute top-4 left-4 z-10 bg-black/60 backdrop-blur-md px-3 py-1 text-[10px] font-bold text-gray-300 tracking-wider rounded-md">Vitamins</div>
+                            <img src="multivitamin_1774712485782.png" class="w-full h-full object-cover object-center opacity-90 group-hover/card:scale-105 transition-transform duration-700" alt="Active Multivitamin">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#111] via-transparent to-transparent opacity-80"></div>
+                        </div>
+                        <div class="p-5 pt-3 flex flex-col flex-grow relative z-20">
+                            <h4 class="font-bold text-lg mb-2 text-white">Athlete Multivitamin</h4>
+                            <div class="flex items-center justify-between mb-6">
+                                <span class="text-xl font-bold text-accent">UGX 45,000</span>
+                                <div class="flex gap-1 text-accent">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/256700000000?text=Hi!%20I'd%20like%20to%20order%20Multivitamin" target="_blank" class="w-full mt-auto flex items-center justify-center gap-2 py-3 rounded-md text-sm font-semibold bg-transparent border border-white/10 text-gray-400 hover:text-white hover:border-[#25D366] hover:bg-[#25D366]/10 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="text-accent group-hover/card:text-[#25D366] transition-colors"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Controls -->
+                <button id="store-prev" class="absolute left-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#1A1A1A]/80 backdrop-blur border border-white/10 text-white flex items-center justify-center rounded-full hover:bg-accent hover:text-black transition-all z-10 opacity-0 group-hover:opacity-100 -translate-x-4 group-hover:translate-x-0 cursor-pointer">
+                    <i data-lucide="chevron-left" class="w-6 h-6"></i>
+                </button>
+                <button id="store-next" class="absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 bg-[#1A1A1A]/80 backdrop-blur border border-white/10 text-white flex items-center justify-center rounded-full hover:bg-accent hover:text-black transition-all z-10 opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0 cursor-pointer">
+                    <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Map Section -->
+    <section id="location" class="relative bg-[#0A0A0A]">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-12 md:p-24 flex flex-col justify-center">
+                <p class="text-accent text-sm font-semibold tracking-widest uppercase mb-3 reveal">Find Us</p>
+                <h2 class="display-font text-5xl md:text-6xl text-white mb-6 reveal reveal-delay-200 premium-text-reveal">Your New <span class="text-accent">Home</span></h2>
+                <p class="text-gray-400 text-lg mb-8 font-light max-w-md reveal reveal-delay-300">Located right in the heart of the Fitness District. Stop by for a tour, or reach out to claim your founding membership.</p>
+                
+                <ul class="space-y-6 mb-10 reveal reveal-delay-400">
+                    <li class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Address</h4>
+                            <p class="text-gray-400">Ntinda, Kiwatule,<br>Kampala, Uganda</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-lg">Hours</h4>
+                            <p class="text-gray-400">Mon - Fri: 5:00 AM - 11:00 PM<br>Weekends: 6:00 AM - 9:00 PM</p>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="reveal reveal-delay-500">
+                    <a target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=Ntinda,+Kampala,+Uganda" class="btn-primary w-full sm:w-auto text-center justify-center">Get Directions <i data-lucide="navigation" class="ml-2 w-5 h-5"></i></a>
+                </div>
+            </div>
+            
+            <div class="h-[400px] lg:h-auto min-h-[500px] reveal reveal-delay-200">
+                <!-- [CUSTOMIZE HERE: Google Map Embed iframe] -->
+                <iframe 
+                    src="https://maps.google.com/maps?q=Ntinda,%20Kampala,%20Uganda&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] pt-24 pb-6 border-t border-white/5 relative overflow-hidden">
+        
+        <!-- Apple-style massive background word mark -->
+        <div class="absolute bottom-[-5%] left-1/2 -translate-x-1/2 w-[110%] text-center z-0 pointer-events-none select-none flex justify-center items-end" aria-hidden="true">
+            <span class="display-font text-[35vw] md:text-[28vw] leading-[0.7] text-white/[0.02] tracking-tighter">FITFUSION</span>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 mb-20">
+                
+                <!-- Brand Col -->
+                <div class="md:col-span-1 flex flex-col items-start">
+                    <a href="#" class="display-font text-4xl tracking-wide flex items-center gap-2 mb-6 group cursor-pointer inline-block">
+                        <i data-lucide="activity" class="text-accent w-10 h-10 group-hover:scale-110 transition-transform"></i>
+                        FIT<span class="text-accent">FUSION</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8 max-w-sm font-light">Premium fitness destination for those who demand the best from themselves and their environment. Evolution awaits.</p>
+                    
+                    <div class="flex gap-3">
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-accent hover:border-accent hover:-translate-y-1 transition-all duration-300 shadow-[0_0_0_rgba(170,255,0,0)] hover:shadow-[0_10px_20px_rgba(170,255,0,0.3)]" title="Instagram">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-accent hover:border-accent hover:-translate-y-1 transition-all duration-300 shadow-[0_0_0_rgba(170,255,0,0)] hover:shadow-[0_10px_20px_rgba(170,255,0,0.3)]" title="X (Twitter)">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-black hover:bg-accent hover:border-accent hover:-translate-y-1 transition-all duration-300 shadow-[0_0_0_rgba(170,255,0,0)] hover:shadow-[0_10px_20px_rgba(170,255,0,0.3)]" title="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.23-1.15 4.39-2.98 5.74-1.85 1.36-4.29 1.75-6.52 1.12-2.2-.6-4.04-2.12-5.04-4.19-1.02-2.1-.96-4.63.15-6.67 1.15-2.09 3.23-3.48 5.57-3.8 1.33-.18 2.69-.11 3.97.2v4.19c-1.07-.38-2.31-.26-3.27.35-.97.6-1.62 1.63-1.74 2.74-.13 1.12.3 2.3 1.11 3.1.8.79 1.95 1.11 3.05.9 1.1-.2 2.05-.96 2.53-1.95.48-1 .56-2.19.55-3.29V.02z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+                
+                <!-- Explore Links Col -->
+                <div class="md:pl-12">
+                    <h4 class="font-bold text-white mb-8 border-b border-accent/20 pb-4 uppercase tracking-widest text-xs inline-block">Explore FitFusion</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#features" class="group flex items-center text-gray-400 hover:text-accent transition-colors"><span class="w-0 overflow-hidden group-hover:w-4 transition-all duration-300 text-accent">—</span><span class="group-hover:translate-x-2 transition-transform duration-300">Features</span></a></li>
+                        <li><a href="#classes" class="group flex items-center text-gray-400 hover:text-accent transition-colors"><span class="w-0 overflow-hidden group-hover:w-4 transition-all duration-300 text-accent">—</span><span class="group-hover:translate-x-2 transition-transform duration-300">Classes</span></a></li>
+                        <li><a href="#trainers" class="group flex items-center text-gray-400 hover:text-accent transition-colors"><span class="w-0 overflow-hidden group-hover:w-4 transition-all duration-300 text-accent">—</span><span class="group-hover:translate-x-2 transition-transform duration-300">Trainers</span></a></li>
+                        <li><a href="#pricing" class="group flex items-center text-gray-400 hover:text-accent transition-colors"><span class="w-0 overflow-hidden group-hover:w-4 transition-all duration-300 text-accent">—</span><span class="group-hover:translate-x-2 transition-transform duration-300">Memberships</span></a></li>
+                        <li><a href="#store" class="group flex items-center text-gray-400 hover:text-accent transition-colors"><span class="w-0 overflow-hidden group-hover:w-4 transition-all duration-300 text-accent">—</span><span class="group-hover:translate-x-2 transition-transform duration-300">Store</span></a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Col -->
+                <div>
+                    <!-- [CUSTOMIZE HERE: Contact Details] -->
+                    <h4 class="font-bold text-white mb-8 border-b border-accent/20 pb-4 uppercase tracking-widest text-xs inline-block">Contact Headquarters</h4>
+                    <ul class="space-y-5">
+                        <li class="flex items-start gap-4 group">
+                            <div class="w-10 h-10 rounded bg-[#111] border border-white/5 flex items-center justify-center text-gray-400 group-hover:bg-accent group-hover:text-black group-hover:-translate-y-1 transition-all">
+                                <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-gray-400 group-hover:text-white transition-colors text-sm pt-1">Ntinda, Kiwatule,<br>Kampala, Uganda</span>
+                        </li>
+                        <li class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 rounded bg-[#111] border border-white/5 flex items-center justify-center text-gray-400 group-hover:bg-accent group-hover:text-black group-hover:-translate-y-1 transition-all">
+                                <i data-lucide="phone" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-gray-400 group-hover:text-white transition-colors text-sm">+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-center gap-4 group">
+                            <div class="w-10 h-10 rounded bg-[#111] border border-white/5 flex items-center justify-center text-gray-400 group-hover:bg-accent group-hover:text-black group-hover:-translate-y-1 transition-all">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-gray-400 group-hover:text-white transition-colors text-sm">hello@fitfusion.com</span>
+                        </li>
+                    </ul>
+                    <!-- [/CUSTOMIZE HERE] -->
+                </div>
+            </div>
+            
+            <!-- Bottom Copyright & Small Legal Bar -->
+            <div class="border-t border-white/10 pt-6 mt-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-xs text-gray-500 font-medium tracking-wide">&copy; 2026 FitFusion Gym. All rights reserved.</p>
+                
+                <div class="flex items-center gap-4 text-xs text-gray-500 font-medium">
+                    <a href="#" class="hover:text-accent transition-colors">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-accent transition-colors">Terms of Service</a>
+                </div>
+                
+                <p class="text-xs text-accent font-bold tracking-widest uppercase opacity-70">Designed For Greatness</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div id="floating-whatsapp" class="fixed bottom-6 right-6 z-50 transition-all duration-500 translate-y-20 opacity-0 flex flex-col items-end gap-3 pointer-events-none">
+        <!-- Tooltip -->
+        <div id="whatsapp-tooltip" class="bg-[#1A1A1A] border border-white/10 text-white text-sm py-2 px-4 rounded-lg shadow-2xl origin-bottom-right transition-all duration-500 scale-0 opacity-0 pointer-events-auto">
+            Let's Chat 💪🏿
+        </div>
+        <!-- Button -->
+        <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'd%20love%20to%20know%20more%20about%20FitFusion." class="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:scale-110 hover:bg-[#128C7E] transition-all duration-300 pointer-events-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Script Init (Bottom) -->
+    <script src="script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
