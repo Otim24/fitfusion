@@ -3,8 +3,8 @@
 :root {
   --bg-dark: #0A0A0A;
   --bg-card: #1A1A1A;
-  --accent: #AAFF00;
-  --accent-glow: rgba(170, 255, 0, 0.4);
+  --accent: #DC2626;
+  --accent-glow: rgba(220, 38, 38, 0.4);
   --text-primary: #FFFFFF;
   --text-secondary: #9CA3AF;
 }
@@ -186,7 +186,7 @@ h1, h2, h3, h4, h5, h6, .display-font {
 @media (hover: hover) {
   .premium-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(170, 255, 0, 0.2);
+    border-color: rgba(220, 38, 38, 0.2);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   }
 }
