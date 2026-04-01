@@ -231,44 +231,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Typewriter Effect ---
-  const typewriterText = document.getElementById('typewriter-text');
-  if (typewriterText) {
+  // --- Smooth Fade Word Rotation ---
+  const fadeText = document.getElementById('fade-text');
+  if (fadeText) {
     const words = ["Elevate", "Transform", "Redefine", "Empower", "Master"];
     let wordIndex = 0;
-    let charIndex = words[0].length;
-    let isDeleting = false;
-    let typingSpeed = 150;
 
-    const type = () => {
-      const currentWord = words[wordIndex];
+    const cycleWords = () => {
+      // Fade out
+      fadeText.style.opacity = '0';
+      fadeText.style.transform = 'translateY(8px)';
       
-      if (isDeleting) {
-        typewriterText.textContent = currentWord.substring(0, charIndex - 1);
-        charIndex--;
-      } else {
-        typewriterText.textContent = currentWord.substring(0, charIndex + 1);
-        charIndex++;
-      }
-
-      if (!isDeleting && charIndex === currentWord.length) {
-        isDeleting = true;
-        typingSpeed = 2500; // Pause at the end of word
-      } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
+      setTimeout(() => {
         wordIndex = (wordIndex + 1) % words.length;
-        typingSpeed = 400; // Pause before typing next word
-      } else {
-        typingSpeed = isDeleting ? 60 : 120; // Speed of typing / deleting
-      }
-
-      setTimeout(type, typingSpeed);
+        fadeText.textContent = words[wordIndex];
+        
+        // Fade in
+        fadeText.style.opacity = '1';
+        fadeText.style.transform = 'translateY(0)';
+      }, 600);
     };
 
-    // Start the deleting phase after splash screen finishes + reading time
+    // Start cycling after splash screen
     setTimeout(() => {
-        isDeleting = true;
-        type();
-    }, 4000); 
+      setInterval(cycleWords, 3000);
+    }, 4000);
   }
 });

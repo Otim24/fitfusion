@@ -252,22 +252,6 @@ h1, h2, h3, h4, h5, h6, .display-font {
   }
 }
 
-/* Typewriter Cursor */
-.typewriter-caret {
-  display: inline-block;
-  width: 5px;
-  height: 0.85em;
-  background-color: var(--accent);
-  margin-left: 2px;
-  margin-right: 4px;
-  animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
 /* Infinite Marquee */
 .marquee-wrapper {
   display: flex;
