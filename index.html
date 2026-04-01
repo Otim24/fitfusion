@@ -69,41 +69,41 @@
     
     <!-- Navigation -->
     <header id="main-header" class="fixed w-full z-50 header-glass">
-        <div id="header-container" class="container mx-auto px-6 py-6 transition-all duration-300 flex justify-between items-center">
+        <div id="header-container" class="container mx-auto px-6 py-5 transition-all duration-300 flex justify-between items-center">
             <!-- [CUSTOMIZE HERE: Gym Logo & Name] -->
             <!-- Logo -->
-            <a href="#" class="display-font text-3xl tracking-wide flex items-center gap-2">
-                <img src="kash_logo.jpeg" alt="Kash Gym" class="w-10 h-10 rounded-full object-cover">
-                KASH<span class="text-accent">GYM</span>
+            <a href="#" class="display-font text-3xl tracking-wide flex items-center gap-2.5">
+                <img src="kash_logo.jpeg" alt="Kash Gym" class="w-10 h-10 rounded-full object-cover shadow-md">
+                <span class="nav-brand-text text-white transition-colors duration-300">KASH<span class="text-accent">GYM</span></span>
             </a>
             
             <!-- Desktop Nav -->
-            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide">
-                <a href="#features" class="hover:text-accent transition-colors">Features</a>
-                <a href="#classes" class="hover:text-accent transition-colors">Classes</a>
-                <a href="#trainers" class="hover:text-accent transition-colors">Trainers</a>
-                <a href="#pricing" class="hover:text-accent transition-colors">Pricing</a>
-                <a href="#store" class="hover:text-accent transition-colors">Store</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase">
+                <a href="#features" class="nav-link text-white/80 hover:text-accent transition-colors duration-200">Features</a>
+                <a href="#classes" class="nav-link text-white/80 hover:text-accent transition-colors duration-200">Classes</a>
+                <a href="#trainers" class="nav-link text-white/80 hover:text-accent transition-colors duration-200">Trainers</a>
+                <a href="#pricing" class="nav-link text-white/80 hover:text-accent transition-colors duration-200">Pricing</a>
+                <a href="#store" class="nav-link text-white/80 hover:text-accent transition-colors duration-200">Store</a>
             </nav>
             
             <!-- CTA & Mobile Toggle -->
             <div class="flex items-center gap-4">
-                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20Kash%20Gym." class="hidden md:inline-flex btn-primary text-sm py-2 px-6">Get Started</a>
-                <button id="menu-btn" class="md:hidden text-[#1A1A1A] hover:text-accent transition-colors">
-                    <i data-lucide="menu" class="w-8 h-8"></i>
+                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20Kash%20Gym." class="hidden md:inline-flex btn-primary text-sm py-2.5 px-7 rounded-full shadow-lg">Get Started</a>
+                <button id="menu-btn" class="md:hidden nav-link text-white hover:text-accent transition-colors">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
                 </button>
             </div>
         </div>
         
         <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-black/10 absolute w-full top-full left-0">
-            <nav class="flex flex-col py-4 px-6 space-y-4 font-medium">
-                <a href="#features" class="mobile-link text-lg hover:text-accent transition-colors">Features</a>
-                <a href="#classes" class="mobile-link text-lg hover:text-accent transition-colors">Classes</a>
-                <a href="#trainers" class="mobile-link text-lg hover:text-accent transition-colors">Trainers</a>
-                <a href="#pricing" class="mobile-link text-lg hover:text-accent transition-colors">Pricing</a>
-                <a href="#store" class="mobile-link text-lg hover:text-accent transition-colors">Store</a>
-                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20Kash%20Gym." class="mobile-link text-accent text-lg mt-4 border border-accent rounded py-2 text-center" style="font-family:'Bebas Neue',sans-serif">Get Started</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-black/10 absolute w-full top-full left-0 shadow-lg">
+            <nav class="flex flex-col py-5 px-6 space-y-4 font-semibold">
+                <a href="#features" class="mobile-link text-lg text-[#1A1A1A] hover:text-accent transition-colors">Features</a>
+                <a href="#classes" class="mobile-link text-lg text-[#1A1A1A] hover:text-accent transition-colors">Classes</a>
+                <a href="#trainers" class="mobile-link text-lg text-[#1A1A1A] hover:text-accent transition-colors">Trainers</a>
+                <a href="#pricing" class="mobile-link text-lg text-[#1A1A1A] hover:text-accent transition-colors">Pricing</a>
+                <a href="#store" class="mobile-link text-lg text-[#1A1A1A] hover:text-accent transition-colors">Store</a>
+                <a target="_blank" href="https://wa.me/256700000000?text=Hi!%20I'm%20ready%20to%20get%20started%20with%20Kash%20Gym." class="mobile-link text-accent text-lg mt-4 border-2 border-accent rounded-full py-2.5 text-center font-bold" style="font-family:'Bebas Neue',sans-serif">Get Started</a>
             </nav>
         </div>
     </header>

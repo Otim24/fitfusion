@@ -114,16 +114,46 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Sticky Header ---
   const header = document.getElementById('main-header');
   const headerContainer = document.getElementById('header-container');
+  const navLinks = document.querySelectorAll('.nav-link');
+  const navBrandText = document.querySelector('.nav-brand-text');
   
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
       header.classList.add('scrolled');
-      headerContainer.classList.remove('py-6');
-      headerContainer.classList.add('py-4');
+      headerContainer.classList.remove('py-5');
+      headerContainer.classList.add('py-3');
+      // Switch to dark text on white background
+      navLinks.forEach(link => {
+        link.classList.remove('text-white/80');
+        link.classList.add('text-[#1A1A1A]/70');
+      });
+      if (navBrandText) {
+        navBrandText.classList.remove('text-white');
+        navBrandText.classList.add('text-[#1A1A1A]');
+      }
+      const menuBtnEl = document.getElementById('menu-btn');
+      if (menuBtnEl) {
+        menuBtnEl.classList.remove('text-white');
+        menuBtnEl.classList.add('text-[#1A1A1A]');
+      }
     } else {
       header.classList.remove('scrolled');
-      headerContainer.classList.add('py-6');
-      headerContainer.classList.remove('py-4');
+      headerContainer.classList.add('py-5');
+      headerContainer.classList.remove('py-3');
+      // White text on transparent over hero
+      navLinks.forEach(link => {
+        link.classList.add('text-white/80');
+        link.classList.remove('text-[#1A1A1A]/70');
+      });
+      if (navBrandText) {
+        navBrandText.classList.add('text-white');
+        navBrandText.classList.remove('text-[#1A1A1A]');
+      }
+      const menuBtnEl = document.getElementById('menu-btn');
+      if (menuBtnEl) {
+        menuBtnEl.classList.add('text-white');
+        menuBtnEl.classList.remove('text-[#1A1A1A]');
+      }
     }
   });
 
