@@ -3,8 +3,8 @@
 :root {
   --bg-dark: #FFFFFF;
   --bg-card: #F5F5F5;
-  --accent: #DC2626;
-  --accent-glow: rgba(220, 38, 38, 0.4);
+  --accent: #39FF14;
+  --accent-glow: rgba(57, 255, 20, 0.4);
   --text-primary: #1A1A1A;
   --text-secondary: #6B7280;
 }
@@ -131,6 +131,10 @@ h1, h2, h3, h4, h5, h6, .display-font {
   cursor: pointer;
 }
 
+.btn-primary {
+  color: #0A0A0A;
+}
+
 @media (hover: hover) {
   .btn-primary:hover {
     box-shadow: 0 0 20px var(--accent-glow);
@@ -158,7 +162,7 @@ h1, h2, h3, h4, h5, h6, .display-font {
 @media (hover: hover) {
   .btn-secondary:hover {
     border-color: var(--accent);
-    background-color: rgba(220,38,38,0.05);
+    background-color: rgba(57,255,20,0.05);
     transform: translateY(-2px);
   }
 }
@@ -218,7 +222,7 @@ h1, h2, h3, h4, h5, h6, .display-font {
 @media (hover: hover) {
   .premium-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(220, 38, 38, 0.2);
+    border-color: rgba(57, 255, 20, 0.2);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
   }
 }
